@@ -66,9 +66,7 @@ namespace _1988285_LTDT_Project02
 			
 			
 			for (int i = 0; i < g.soDinh; i++)
-			{
-
-				
+			{				
 				int dinhDangXet = i;
 				List<int> dsDinh = new List<int>();
 				while (dinhDangXet != path[source])
@@ -93,7 +91,7 @@ namespace _1988285_LTDT_Project02
 			}
 
 		}
-
+		//initial and run algorythm 
 		public void RunModule(string filePath)
 		{
 			GRAPH g = new GRAPH();			
