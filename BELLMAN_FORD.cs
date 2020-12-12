@@ -66,20 +66,17 @@ namespace _1988285_LTDT_Project02
 			
 			
 			for (int i = 0; i < g.soDinh; i++)
-			{
-
-				
+			{				
 				int dinhDangXet = i;
 				List<int> dsDinh = new List<int>();
 				while (dinhDangXet != path[source])
-				{
-					
+				{					
 					dsDinh.Add(dinhDangXet);
 					
 					dinhDangXet = path[dinhDangXet];
 				}
 				
-				
+				//kiem tra trong so
 				if (weight[i] == maxValue)
 				{
 					Console.WriteLine($"khong co duong di tu { source} den {i}");
